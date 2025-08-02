@@ -1,0 +1,70 @@
+/* Register Form Styling */
+.form-info  form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #EEEFE0;
+  padding: 40px;
+}
+
+form h2 {
+  color: #647665;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form input {
+  width: 90%;
+  max-width: 350px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #819A91;
+  box-shadow: 0 0 6px rgba(129, 154, 145, 0.3);
+}
+
+form button {
+  width: 90%;
+  max-width: 350px;
+  padding: 12px;
+  background-color: #647665;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #4e5e4f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  form h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  form input,
+  form button {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
