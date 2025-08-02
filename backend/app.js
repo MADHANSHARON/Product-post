@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads')); 
 
-mongoose.connect('mongodb://localhost:27017/mernproduct');
+mongoose.connect('mongodb+srv://foodwastedonation:foodwastedonation%40123@foodwaste.wqcwcrk.mongodb.net/foodwaste?retryWrites=true&w=majority&appName=foodwaste');
 
 const userSchema = new mongoose.Schema({
   name: String,
